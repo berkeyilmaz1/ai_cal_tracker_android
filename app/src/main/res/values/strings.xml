@@ -43,4 +43,13 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="recently_eaten">Recently eaten</string>
+    <string name="you_haven_t_uploaded_any_food">You haven\'t uploaded any food</string>
+    <string name="start_tracking_today_s_meals_by_taking_a_quick_pictures">Start tracking Today\'s meals by taking a quick pictures</string>
+    <string name="fats_left">Fats left</string>
+    <string name="_10g">10g</string>
+    <string name="protein_left">Protein left</string>
+    <string name="carbs_left">Carbs left</string>
+    <string name="calories_left">Calories left</string>
+    <string name="_1887">1887</string>
 </resources>

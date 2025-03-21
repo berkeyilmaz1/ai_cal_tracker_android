@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "911080272433",
+    "project_id": "ai-cal-tracker-817cf",
+    "storage_bucket": "ai-cal-tracker-817cf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911080272433:android:d69c7cbf003586699f1b10",
+        "android_client_info": {
+          "package_name": "com.duzceders.aicaltracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR4zPTVTO7_FQVn3AE7HTVCwZHDmFjRqQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
