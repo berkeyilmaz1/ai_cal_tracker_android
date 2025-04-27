@@ -145,4 +145,5 @@
     <string name="menu_settings">Ayarlar</string>
     <string name="menu_logout">Çıkış Yap</string>
     <string name="dark_theme">Karanlık Tema</string>
+    <string name="food_name">Yemek Adı</string>
 </resources>
