@@ -21,15 +21,21 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.duzceders.aicaltracker.R;
 import com.duzceders.aicaltracker.databinding.FragmentCalorieTrackerBinding;
+import com.duzceders.aicaltracker.features.calorie_tracker.adapter.MealAdapter;
+import com.duzceders.aicaltracker.product.models.Meal;
 import com.duzceders.aicaltracker.product.models.User;
+import com.duzceders.aicaltracker.product.models.enums.MealType;
 import com.duzceders.aicaltracker.product.service.FirebaseRepository;
 import com.duzceders.aicaltracker.product.service.manager.CloudinaryServiceManager;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.FirebaseApp;
+import com.google.firebase.Timestamp;
 
+import java.util.ArrayList;
 import java.util.Objects;
 import java.util.UUID;
 
@@ -76,6 +82,20 @@ public class CalorieTrackerFragment extends Fragment {
         });
 
         setClickListeners();
+        setRecyclerView();
+    }
+
+    private void setRecyclerView() {
+        ArrayList<Meal> mealList = new ArrayList<>();
+        mealList.add(new Meal("Sabah Kahvaltısı", MealType.LAUNCH, "https://picsum.photos/200/300", "Yemek çok güzeldi", 10, 1, 2, 3, Timestamp.now()));
+        mealList.add(new Meal("Öğle Yemeği", MealType.LAUNCH, "https://picsum.photos/200/300", "Yemek çok güzeldi", 10, 1, 2, 3, Timestamp.now()));
+        mealList.add(new Meal("Akşam Yemeği", MealType.LAUNCH, "https://picsum.photos/200/300", "Yemek çok güzeldi", 10, 1, 2, 3, Timestamp.now()));
+        Log.d(TAG, "Meal List: " + mealList.toString());
+        MealAdapter mealAdapter = new MealAdapter(mealList);
+
+        binding.recyclerView.setAdapter(mealAdapter);
+
+        binding.recyclerView.setLayoutManager(new LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false));
     }
 
     private void updateUiWithUserData(User user) {

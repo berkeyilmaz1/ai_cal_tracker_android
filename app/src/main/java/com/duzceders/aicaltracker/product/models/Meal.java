@@ -23,6 +23,18 @@ public class Meal {
 
     public Meal() {
     }
+
+    public Meal(String meal_name, MealType meal_type, String image_url, String user_note, double protein_g, double fat_g, double carbs_g, double calorie_g, Timestamp meal_time) {
+        this.meal_name = meal_name;
+        this.meal_type = meal_type;
+        this.image_url = image_url;
+        this.user_note = user_note;
+        this.protein_g = protein_g;
+        this.fat_g = fat_g;
+        this.carbs_g = carbs_g;
+        this.calorie_g = calorie_g;
+        this.meal_time = meal_time;
+    }
 }
 
 
