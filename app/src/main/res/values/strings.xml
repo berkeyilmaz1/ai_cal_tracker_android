@@ -168,8 +168,6 @@
     <string name="gemini_response_error">"Couldn't process gemini response. Please try again."</string>
     <string name="food_analysis_error">"Error occured during food analysis."></string>
 
-    </resources>
-
 
     <string name="update_height">Update Height</string>
     <string name="update_weight">Update Weight</string>
